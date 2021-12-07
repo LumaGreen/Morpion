@@ -4,6 +4,7 @@
 - [Introduction](#introduction)
 - [Credits](#credits)
 
+## 1.0
 
 ## Introduction 
 This is a mini game, it mainly will help us to understand the language C. 
