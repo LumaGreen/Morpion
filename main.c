@@ -5,10 +5,15 @@
 #define HEIGHT 3
 
 void ft_display_grid(void);
+int ft_case_row_request(void);
+int ft_case_column_request(void);
 
 int main(void)
 {
+    
     ft_display_grid();
+    ft_case_row_request();
+    ft_case_column_request();
 
     return 0;
 }
@@ -44,4 +49,33 @@ void ft_display_grid(void)
                 printf("+---");
             printf("+\n");
 }
+
+int ft_case_row_request(void)
+{
+    int case_row = 0;
+    int i;
+    printf("Please, enter de row number (");
+    for (i = 1; i < WIDTH; i++)
+        printf("%d, ", i);
+    printf("%d) : ", i);
+    scanf("%d", &case_row);
+
+    return case_row;
+}
+
+int ft_case_column_request(void)
+{
+    int case_column = 0;
+    int i;
+    printf("Please, enter de column number (");
+    for (i = 1; i < HEIGHT; i++)
+        printf("%d, ", i);
+    printf("%d) : ", i);
+    scanf("%d", &case_column);
+
+    return case_column;
+}
+
+
+
 
